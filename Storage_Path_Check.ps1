@@ -1,6 +1,6 @@
 # Borrowed / Inspired from: VMware/Storage/Storage_path_Check_v2.ps1
 #
-# Excel is need : https://github.com/dfinke/ImportExcel
+# Excel is needed : https://github.com/dfinke/ImportExcel
 # Install ImportExcel by running:
 # Install-Module ImportExcel -scope CurrentUser
 
@@ -44,4 +44,4 @@ $lunReport = foreach ($VH in $VMHost) {
 # Generate Storage path and multipath configuration
     $lunReport | Export-Excel | Sort-Object Cluster -Descending
 
-# Would like to narrow the script down to onyl why SAN Paths / Fibrechannel / vmhba
+# Would like to narrow the script down to onyl show SAN Paths / Fibrechannel / vmhba
